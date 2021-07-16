@@ -705,15 +705,15 @@ In the example below, to create an offcanvas navbar that is always collapsed acr
 </nav>
 {{< /example >}}
 
-To create an offcanvas navbar that expands into a normal navbar at a specific breakpoint like `xl`, use `.navbar-expand-xl`.
+To create an offcanvas navbar that expands into a normal navbar at a specific breakpoint like `lg`, use `.navbar-expand-lg`.
 
 ```html
-<nav class="navbar navbar-light navbar-expand-xl bg-light fixed-top">
+<nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top">
   <a class="navbar-brand" href="#">Offcanvas navbar</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasXL" aria-controls="navbarOffcanvasXL">
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasXL" aria-labelledby="navbarOffcanvasXLLabel">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
     ...
   </div>
 </nav>
