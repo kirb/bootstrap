@@ -659,10 +659,10 @@ When you do this, we recommend including additional JavaScript to move the focus
 
 Transform your expanding and collapsing navbar into an offcanvas drawer with the offcanvas plugin. We extend both the offcanvas default styles and use our `.navbar-expand-*` classes to create a dynamic and flexible navigation sidebar.
 
-For example, to create an offcanvas navbar that expands into a normal navbar at the `xl` breakpoint, use `.navbar-expand-xl` and an offcanvas component around your navbar content.
+In the example below, to create an offcanvas navbar that is always collapsed across all breakpoints, omit the `.navbar-expand-*` class entirely.
 
 {{< example >}}
-<nav class="navbar navbar-light navbar-expand-xl bg-light fixed-top">
+<nav class="navbar navbar-light bg-light fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Offcanvas navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -705,15 +705,15 @@ For example, to create an offcanvas navbar that expands into a normal navbar at 
 </nav>
 {{< /example >}}
 
-For an offcanvas navbar that is always collapsed across all breakpoints, omit the `.navbar-expand-*` class entirely.
+To create an offcanvas navbar that expands into a normal navbar at a specific breakpoint like `xl`, use `.navbar-expand-xl`.
 
 ```html
-<nav class="navbar navbar-light bg-light fixed-top">
+<nav class="navbar navbar-light navbar-expand-xl bg-light fixed-top">
   <a class="navbar-brand" href="#">Offcanvas navbar</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasAlways" aria-controls="navbarOffcanvasAlways">
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasXL" aria-controls="navbarOffcanvasXL">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasAlways" aria-labelledby="navbarOffcanvasAlwaysLabel">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasXL" aria-labelledby="navbarOffcanvasXLLabel">
     ...
   </div>
 </nav>
