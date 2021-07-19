@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "@kirb/bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "4.6.0",
   "config": {
@@ -78,7 +78,7 @@
   "main": "dist/js/bootstrap.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twbs/bootstrap.git"
+    "url": "git+https://github.com/kirb/bootstrap.git"
   },
   "bugs": {
     "url": "https://github.com/twbs/bootstrap/issues"
